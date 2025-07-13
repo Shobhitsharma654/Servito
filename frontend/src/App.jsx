@@ -6,21 +6,22 @@ import Navbar from './components/Navbar';
 import AddAddress from './pages/AddAddress';
 import Services from './pages/Services';
 
+import Hero from './pages/Hero';
+import AboutPage from './components/AboutPage';
+import Testimonials from './pages/Testimonials';
+import Pricing from './pages/Pricing';
+
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
      <Navbar />
-     <Routes>
+    <Hero/>
+    <Services/>
+    <AboutPage/>
+    <Pricing/>
+    <Testimonials/>
+    <Footer/>
       
-       <Route path="/" element={<Home />} />
-       <Route path="/add-address" element={<AddAddress />} />
-        <Route path="/services" element={<Services />} /> 
-       <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> 
-       <Route path="/login" element={<Login />} />
-       <Route path="/register" element={<Register />} /> 
-     </Routes>
-     <Footer/>
     </div>
   );
 }
