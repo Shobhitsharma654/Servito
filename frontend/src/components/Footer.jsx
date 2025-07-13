@@ -1,41 +1,49 @@
-import React from 'react';
+import React from 'react'
+import { assets } from '../assets/assets'
+
 
 const Footer = () => {
-  return (
-    <footer className="bg-gray-800 text-white mt-12">
-      <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <div>
-          <h2 className="text-xl font-bold mb-3">Servito</h2>
-          <p className="text-sm text-gray-400">
-            Book essential local services with ease. Fast, reliable, and trusted by users.
-          </p>
-        </div>
+   
+    return (
+        <footer className="px-6 bg-white  md:px-16 lg:px-36 w-full ">
+            <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-14">
+                <div className="md:max-w-96">
+                     <h2 className="font-semibold text-2xl " >Servito</h2>
+                   
+                    <p className="mt-6 text-sm">
+                         Book essential local services with ease. Fast, reliable, and trusted by users.
+                    </p>
+                       <div className="flex items-center gap-2 mt-4">
+                        <img src={assets.googlePlay} alt="google play" className="h-9 w-auto " />
+                        <img src={assets.appStore} alt="app store" className="h-9 w-auto" />
+                    </div>
+                   
+                </div>
+                <div className="flex-1 flex items-start md:justify-end gap-20 md:gap-40">
+                    <div>
+                        <h2 className="font-semibold mb-5">Company</h2>
+                        <ul className="text-sm space-y-2">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 className="font-semibold mb-5">Get in touch</h2>
+                        <div className="text-sm space-y-2">
+                            <p>+1-234-567-890</p>
+                            <p>contact@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p className="pt-4 text-center text-sm pb-5">
+                Copyright © Servito. All Right Reserved.
+            </p>
+        </footer>
+    )
 
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
-            <li><a href="/" className="hover:text-blue-400">Home</a></li>
-            <li><a href="/services" className="hover:text-blue-400">Services</a></li>
-            <li><a href="/about" className="hover:text-blue-400">About</a></li>
-            <li><a href="/contact" className="hover:text-blue-400">Contact</a></li>
-          </ul>
-        </div>
+}
 
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Contact</h3>
-          <p className="text-sm text-gray-300">Email: support@servito.com</p>
-          <p className="text-sm text-gray-300">Phone: +91 98765 43210</p>
-          <p className="text-sm text-gray-300">Location: India</p>
-        </div>
-
-      </div>
-
-      <div className="border-t border-gray-700 text-center py-4 text-sm text-gray-400">
-        © {new Date().getFullYear()} Servito. All rights reserved.
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
+export default Footer
