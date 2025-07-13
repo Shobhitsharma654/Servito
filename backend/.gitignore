@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage directory used by testing tools
+coverage/
+
+# Build files
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# Optional npm cache and debug
+.cache/
